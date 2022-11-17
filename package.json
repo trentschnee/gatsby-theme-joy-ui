@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-joy-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "Gatsby theme that uses joy ui under the hood and has customized components to work with Gatsby.",
   "scripts": {
