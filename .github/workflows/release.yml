@@ -28,7 +28,7 @@ jobs:
       - name: Test
         run: npm run test:unit --if-present
       - name: Build
-        run: npm run build
+        run: npm run prepare
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
