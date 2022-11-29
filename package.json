@@ -18,7 +18,7 @@
     "./dist/**/*"
   ],
   "engines": {
-    "node": ">=8.19.2"
+    "node": ">=8.0.0"
   },
   "keywords": [
     "joy",
