@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 18.x
           npm-version: 8.x
+      - name: Set token
+        run: echo //npm.pkg.github.com/:_authToken=$GH_TOKEN >> ~/.npmrc
+        env: GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install dependencies
         run: npx ci
       - name: Install semantic-release extra plugins
