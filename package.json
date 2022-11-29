@@ -63,7 +63,6 @@
     "ts-jest": "^29.0.3",
     "typescript": "^4.6.3"
   },
-  "gitHead": "ab9f28fbb8b8fa66272488e560699c47187c2fdc",
   "repository": {
     "type": "git",
     "url": "https://github.com/trentschnee/gatsby-theme-joy-ui.git"
