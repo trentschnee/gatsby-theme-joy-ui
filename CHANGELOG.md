@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/trentschnee/gatsby-theme-joy-ui/compare/v1.1.0...v1.1.1) (2022-12-02)
+
+
+### Bug Fixes
+
+* add tags / update dependencies from last commit ([c9851fa](https://github.com/trentschnee/gatsby-theme-joy-ui/commit/c9851fa03fbd82afa917e402351a44149b5e531f))
+
 # [1.1.0](https://github.com/trentschnee/gatsby-theme-joy-ui/compare/v1.0.0...v1.1.0) (2022-11-29)
 
 
