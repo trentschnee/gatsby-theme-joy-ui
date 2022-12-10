@@ -87,7 +87,9 @@ To run tests, run the following command
 ```bash
   npm run test
 ```
-
+## Important Links
+- [Gatsby Theme Joy UI Plugin Page](https://www.gatsbyjs.com/plugins/gatsby-theme-joy-ui/)
+- [Gatsby Theme Joy UI NPM Package Page](https://www.npmjs.com/package/gatsby-theme-joy-ui/)
 ## Issues
 
 If you see any issues such as missing features/bugs, please refer to [gatsby-joy-ui-theme's issue page](https://github.com/trentschnee/gatsby-theme-joy-ui/issues)
