@@ -3,7 +3,7 @@ const defaultWebFontsConfig = {
   fonts: {
     google: [
       {
-        family: `Roboto`,
+        family: `Public Sans`, // your font name here
         variants: [`300`, `400`, `500`],
       },
     ],
