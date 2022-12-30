@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/gatsby-theme-joy-ui/src",
+  "projectRoot": "packages/gatsby-theme-joy-ui",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{projectRoot}/dist"],
+      "options": {
+        "main": "packages/gatsby-theme-joy-ui/src/index.ts",
+        "tsConfig": "packages/gatsby-theme-joy-ui/tsconfig.lib.json",
+        "assets": ["packages/gatsby-theme-joy-ui/gatsby-node.js"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/gatsby-theme-joy-ui/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

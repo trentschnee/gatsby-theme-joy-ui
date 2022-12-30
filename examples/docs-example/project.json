@@ -1,0 +1,80 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "examples/docs-example/src",
+  "projectRoot": "examples/docs-example",
+
+  "projectType": "application",
+
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "dependsOn": [{ "target": "build", "projects": "dependencies" }],
+      "options": {
+        "commands": [
+          "gatsby build",
+          "echo 'Successfully built the docs-example project'"
+        ],
+        "args": "verbose",
+        "color": true,
+        "parallel": false,
+        "cwd": "examples/docs-example"
+      },
+      "outputs": ["examples/docs-example/public"]
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "dependsOn": [
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ],
+      "options": {
+        "cwd": "examples/docs-example",
+        "command": "gatsby serve"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "gatsby-theme-joy-ui-docs-example:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["examples/docs-example/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/examples/docs-example"],
+      "options": {
+        "jestConfig": "examples/docs-example/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "gatsby develop --verbose",
+          "echo 'Starting the docs-example project in development mode on http://localhost:8000'"
+        ],
+        "args": "verbose",
+        "color": true,
+        "parallel": true,
+        "readyWhen": "success Writing page-data.json",
+        "cwd": "examples/docs-example"
+      }
+    },
+    "clean": {
+      "executor": "nx:run-commands",
+
+      "options": {
+        "cwd": "examples/docs-example",
+        "command": "gatsby clean"
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-theme-joy-ui-docs-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An example based off the offical Joy UI docs",
+  "repository": "https://github.com/trentschnee/gatsby-theme-joy-ui/",
+  "author": "Trent S. (https://www.linkedin.com/in/trentschnee/)",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "@mui/joy": "*",
+    "gatsby": "*",
+    "gatsby-theme-joy-ui": "*"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 1,
+  "projects": {
+    "docs-example": {
+      "root": "packages/docs-example"
+    },
+    "gatsby-theme-joy-ui": {
+      "root": "packages/gatsby-theme-joy-ui"
+    }
+  }
+}
