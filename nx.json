@@ -1,12 +1,8 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "integrated",
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
-    ".eslintrc.json": "*"
+  "npmScope": "gatsby-theme-joy-ui",
+  "affected": {
+    "defaultBase": "main"
   },
   "tasksRunnerOptions": {
     "default": {
@@ -14,30 +10,39 @@
       "options": {
         "cacheableOperations": [
           "build",
-          "test"
+          "lint",
+          "test",
+          "e2e"
         ]
       }
     }
   },
-  "defaultBase": "main",
   "targetDefaults": {
     "build": {
       "dependsOn": [
         "^build"
       ],
-      "outputs": [
-        "{projectRoot}/dist"
+      "inputs": [
+        "production",
+        "^production"
       ]
     },
-    "test": {
-      "outputs": [
-        "{projectRoot}/coverage"
+    "e2e": {
+      "inputs": [
+        "default",
+        "^production"
       ]
     }
   },
-  "workspaceLayout": {
-    "appsDir": "examples",
-    "libsDir": "packages"
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default"
+    ],
+    "sharedGlobals": []
   },
   "generators": {
     "@nrwl/react": {
@@ -45,6 +50,5 @@
         "babel": true
       }
     }
-  },
-  "defaultProject": "docs-example"
+  }
 }
