@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/@angular-devkit/architect/src/builders-schema.json",
+  "builders": {
+    "build": {
+      "implementation": "./src/executors/build/executor",
+      "schema": "./src/executors/build/schema.json",
+      "description": "Build a Gatsby app"
+    },
+    "server": {
+      "implementation": "./src/executors/server/executor",
+      "schema": "./src/builders/server/schema.json",
+      "description": "Starts server for app"
+    }
+  }
+}

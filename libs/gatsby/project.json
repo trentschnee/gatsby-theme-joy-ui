@@ -1,0 +1,61 @@
+{
+  "name": "gatsby",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/gatsby/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/gatsby",
+        "main": "libs/gatsby/src/index.ts",
+        "tsConfig": "libs/gatsby/tsconfig.lib.json",
+        "assets": [
+          "libs/gatsby/*.md",
+          {
+            "input": "./libs/gatsby/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/gatsby/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/gatsby",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/gatsby",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/gatsby/**/*.ts",
+          "libs/gatsby/generators.json",
+          "libs/gatsby/executors.json",
+          "libs/gatsby/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/gatsby/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

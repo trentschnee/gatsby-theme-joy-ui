@@ -1,0 +1,8 @@
+{
+  "name": "@gatsby-theme-joy-ui/gatsby",
+  "version": "0.0.1",
+  "description": "Gatsby Plugin for Nx",
+  "main": "src/index.js",
+  "generators": "./generators.json",
+  "executors": "./executors.json"
+}

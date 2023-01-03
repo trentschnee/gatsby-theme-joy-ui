@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "gatsby",
+  "version": "0.0.1",
+  "generators": {
+    "testing": {
+      "factory": "./src/generators/gatsby/generator",
+      "schema": "./src/generators/gatsby/schema.json",
+      "description": "gatsby generator"
+    }
+  }
+}
