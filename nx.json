@@ -8,6 +8,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
+        "useDaemonProcess": false,
         "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
@@ -51,7 +52,8 @@
       },
       "library": {
         "style": "none",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "jest"
       }
     }
   }

@@ -5,9 +5,9 @@ import { useColorScheme } from "@mui/joy/styles";
 import TextField from "@mui/joy/TextField";
 import Typography from "@mui/joy/Typography";
 import { Stack } from "@mui/system";
-import React from "react";
+import * as React from "react";
 
-
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IIndexPageProps {}
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();

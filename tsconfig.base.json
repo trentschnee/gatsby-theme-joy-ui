@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "gatsby-theme-joy-ui": ["libs/gatsby-theme-joy-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
