@@ -19,7 +19,7 @@ const config = (themeOptions: {
   return {
     plugins: [
       {
-        resolve: `@trentschnee/gatsby-plugin-webfonts`,
+        resolve: `gatsby-plugin-webfonts`,
         options: {
           ...webFontsConfig,
         },

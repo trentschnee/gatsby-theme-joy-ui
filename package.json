@@ -1,22 +1,24 @@
 {
   "name": "gatsby-theme-joy-ui",
-  "version": "1.1.1-development",
-  "private": false,
+  "version": "1.1.1",
+  "private": true,
   "description": "Gatsby theme that uses joy ui under the hood and has customized components to work with Gatsby.",
   "scripts": {
     "build": "lerna run build",
+    "start": "lerna run start --parallel",
+    "build:joytheme": "lerna run --scope \"gatsby-theme-joy-ui\" build",
+    "start:joytheme": "lerna run --scope \"gatsby-theme-joy-ui\" start",
+    "watch:joytheme": "npm run start:joytheme",
+    "develop:joytheme": "npm run start:joytheme",
     "format": "prettier --write 'src/**/*.{js,jsx,json,ts,tsx,md}'",
     "test": "lerna run test",
     "semantic-release": "semantic-release"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "./dist/**/*"
+  "workspaces": [
+    "apps/*",
+    "packages/*"
   ],
-  "engines": {
-    "node": ">=18.0.0"
-  },
+
   "keywords": [
     "joy",
     "joyui",
@@ -39,6 +41,7 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
+    "babel-preset-gatsby-package": "^3.0.0",
     "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.2.3",
     "@types/react-test-renderer": "^18.0.0",
@@ -52,8 +55,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/trentschnee/gatsby-theme-joy-ui.git"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }

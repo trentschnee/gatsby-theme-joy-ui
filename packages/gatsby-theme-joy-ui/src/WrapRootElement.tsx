@@ -1,7 +1,10 @@
 import React from "react";
 import Provider from "./theme/Provider";
 
-type RootElement = { element: React.ReactNode };
-export default function wrapWithProvider({ element }: RootElement) {
+export default function wrapWithProvider({
+  element,
+}: {
+  element: React.ReactNode;
+}) {
   return <Provider>{element}</Provider>;
 }
