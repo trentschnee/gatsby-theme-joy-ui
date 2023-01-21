@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -11,12 +10,11 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "sourceMap": true,
     "isolatedModules": true,
     "noImplicitAny": true,
     "outDir": "dist",
-    "baseUrl": "src",
-    "jsx": "react"
+    "jsx": "react",
+    "allowJs": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "__tests__"]

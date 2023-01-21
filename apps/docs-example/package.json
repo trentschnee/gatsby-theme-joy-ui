@@ -1,6 +1,6 @@
 {
   "name": "docs-example",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
   "description": "An example based off the offical Joy UI docs",
   "repository": "https://github.com/trentschnee/gatsby-theme-joy-ui/",
@@ -9,14 +9,14 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "echo \"Go to http://localhost:8000 when you see something around the lines of 'success Writing page-data.json'\" && gatsby develop",
-    "start": "npm run develop"
+    "start": "gatsby develop"
   },
   "dependencies": {
-    "gatsby-theme-joy-ui": "*",
-    "@mui/joy": "^5.0.0-alpha.56",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "@mui/joy": "^5.0.0-alpha.56",
     "gatsby": "^5.0.0",
+    "gatsby-theme-joy-ui": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

@@ -1,6 +1,7 @@
 {
   "name": "gatsby-theme-joy-ui",
-  "version": "1.1.1",
+  "version": "1.2.0",
+  "private": true,
   "description": "A gatsby theme/plugin that uses Joy UI under the hood with customized components to work seamlessly with Gatsby!",
   "keywords": [
     "Joy"
@@ -9,8 +10,6 @@
   "homepage": "https://github.com/trentschnee/gatsby-theme-joy-ui/tree/main/packages/gatsby-theme-joy-ui#readme",
   "license": "MIT",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
- 
   "files": [
     "./dist/**/*"
   ],
@@ -20,12 +19,12 @@
     "directory": "packages/gatsby-theme-joy-ui"
   },
   "scripts": {
-    "prebuild": "rimraf \"dist\" && tsc --emitDeclarationOnly --declaration --declarationDir dist/",
-    "build": "babel src -d \"dist\" --extensions .ts,.tsx",
-    "watch": "babel src -d \"dist\" --extensions .ts,.tsx --watch",
+    "prebuild": "rimraf dist && tsc --declaration --outDir dist --emitDeclarationOnly",
+    "build": "babel src --out-dir dist --extensions .ts,.tsx",
+    "watch": "babel -w src --out-dir dist --extensions .ts,.tsx",
     "develop": "npm run watch",
     "start": "npm run watch",
-    "prepare": "cross-env NODE_ENV=production && npm run build",
+    "prepare": "cross-env NODE_ENV=production npm run build",
     "semantic-release": "semantic-release",
     "test": "jest"
   },
@@ -33,7 +32,7 @@
     "url": "https://github.com/trentschnee/gatsby-theme-joy-ui/issues"
   },
   "dependencies": {
-    "gatsby-plugin-webfonts": "^2.2.7",
+    "gatsby-plugin-webfonts": "^2.3.2",
     "gatsby-plugin-emotion": "^8.2.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-joy-ui",
+  "name": "gatsby-theme-joy-ui-workspace",
   "private": true,
   "description": "Gatsby theme that uses joy ui under the hood and has customized components to work with Gatsby.",
   "scripts": {
@@ -45,9 +45,8 @@
     "@types/react-test-renderer": "^18.0.0",
     "babel-preset-gatsby-package": "^3.0.0",
     "jest": "^29.3.1",
-    "lerna": "^6.3.0",
+    "lerna": "^6.4.0",
     "react-test-renderer": "^18.2.0",
-    
     "ts-jest": "^29.0.3",
     "typescript": "^4.6.3"
   },
