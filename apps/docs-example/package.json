@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "gatsby-theme-joy-ui": "*",
-    "@mui/joy": "^5.0.0-alpha.56",
+    "@mui/joy": "^5.0.0-alpha.63",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
     "gatsby": "^5.0.0",

@@ -37,7 +37,7 @@
     "gatsby-plugin-emotion": "^8.2.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
-    "@mui/joy": "^5.0.0-alpha.56"
+    "@mui/joy": "^5.0.0-alpha.63"
   },
   "devDependencies": {
     "identity-obj-proxy": "^3.0.0",
