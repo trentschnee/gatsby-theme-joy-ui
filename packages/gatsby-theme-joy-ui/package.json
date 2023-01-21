@@ -16,15 +16,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trentschnee/gatsby-theme-joy-ui.git"
+    "url": "git+https://github.com/trentschnee/gatsby-theme-joy-ui.git",
+    "directory": "packages/gatsby-theme-joy-ui"
   },
   "scripts": {
     "prebuild": "rimraf \"dist\" && tsc --emitDeclarationOnly --declaration --declarationDir dist/",
-    "build": "babel src -d . --extensions .ts,.tsx",
-    "watch": "babel src -d . --extensions .ts,.tsx --watch",
+    "build": "babel src -d \"dist\" --extensions .ts,.tsx",
+    "watch": "babel src -d \"dist\" --extensions .ts,.tsx --watch",
     "develop": "npm run watch",
     "start": "npm run watch",
     "prepare": "cross-env NODE_ENV=production && npm run build",
+    "semantic-release": "semantic-release",
     "test": "jest"
   },
   "bugs": {
@@ -48,7 +50,8 @@
     "typescript": "^4.6.3",
     "jest": "^29.3.1",
     "babel-jest": "^29.3.1",
-    "gatsby-plugin-utils": "^4.0.0"
+    "gatsby-plugin-utils": "^4.0.0",
+    "semantic-release": "^19.0.5"
   },
   "peerDependencies": {
     "gatsby": "^3.0.0 || ^4.0.0 || ^5.0.0",
