@@ -1,12 +1,6 @@
-const {
-  resolvableExtensions,
-  onCreateBabelConfig,
-  onCreateWebpackConfig,
-} = require(`../gatsby-node`);
-const path = require(`path`);
 
-const { testPluginOptionsSchema } = require(`gatsby-plugin-utils`);
-const { pluginOptionsSchema } = require(`../gatsby-node`);
+import { testPluginOptionsSchema } from "gatsby-plugin-utils/test-plugin-options-schema";
+import { pluginOptionsSchema } from "../src/gatsby-node";
 
 describe(`plugin schema`, () => {
   it(`should provide meaningful errors when fields are invalid`, async () => {
