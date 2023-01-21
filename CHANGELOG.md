@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/trentschnee/gatsby-theme-joy-ui/compare/v1.1.1...v1.2.0) (2023-01-21)
+
+
+### Bug Fixes
+
+* prepare script ([e7f4d37](https://github.com/trentschnee/gatsby-theme-joy-ui/commit/e7f4d3717e25d4c0b41a6f20c85137e148f4d8ff))
+* semantic-release script config ([f08ce19](https://github.com/trentschnee/gatsby-theme-joy-ui/commit/f08ce1932754ffbaa5e59c19ac9f1644f99af763))
+* typo in prepare script ([16147e8](https://github.com/trentschnee/gatsby-theme-joy-ui/commit/16147e8e8e7ebe3abcd89665012ebeb86f153da0))
+
+
+### Features
+
+* refactor to monorepo architecture with examples ([#18](https://github.com/trentschnee/gatsby-theme-joy-ui/issues/18)) ([8c2efe1](https://github.com/trentschnee/gatsby-theme-joy-ui/commit/8c2efe1c63de5881b2dc6e0d6120fcdf7fff3337))
+
 ## [1.1.1](https://github.com/trentschnee/gatsby-theme-joy-ui/compare/v1.1.0...v1.1.1) (2022-12-02)
 
 
