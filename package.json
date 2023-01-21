@@ -11,7 +11,7 @@
     "develop:joytheme": "npm run start:joytheme",
     "format": "prettier --write 'src/**/*.{js,jsx,json,ts,tsx,md}'",
     "test": "lerna run test",
-    "prepare": "lerna run --scope \"gatsby-theme-joy-ui\" prepare"
+    "prepare": "lerna run --scope \"gatsby-theme-joy-ui\" prepare",
     "semantic-release": "lerna run --scope \"gatsby-theme-joy-ui\" semantic-release"
   },
   "workspaces": [
