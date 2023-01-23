@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "gatsby-plugin-webfonts": "^2.2.7",
-    "gatsby-plugin-emotion": "^8.2.0",
+    "gatsby-plugin-emotion": "^8.4.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
     "@mui/joy": "^5.0.0-alpha.56"
