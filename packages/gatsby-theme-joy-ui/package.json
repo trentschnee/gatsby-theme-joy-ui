@@ -6,7 +6,12 @@
   },
   "description": "A gatsby theme/plugin that uses Joy UI under the hood with customized components to work seamlessly with Gatsby!",
   "keywords": [
-    "Joy"
+    "joy",
+    "ui",
+    "gatsby",
+    "plugin",
+    "gatsby-plugin",
+    "gatsby-theme"
   ],
   "author": "Trent S. <trentschnee@users.noreply.github.com>",
   "homepage": "https://github.com/trentschnee/gatsby-theme-joy-ui/tree/main/packages/gatsby-theme-joy-ui#readme",
@@ -32,7 +37,7 @@
     "start": "npm run watch",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "publish": "semantic-release",
-    "test": "jest"
+   "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/trentschnee/gatsby-theme-joy-ui/issues"
