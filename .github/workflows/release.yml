@@ -8,9 +8,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/gatsby-theme-joy-ui
 
     steps:
       - name: Checkout
@@ -27,7 +24,7 @@ jobs:
       - name: Install semantic-release extra plugins
         run: npm install --save-dev @semantic-release/changelog @semantic-release/git
       - name: Test
-        run: npm run test --if-present
+        run: npm run test:unit --if-present
       - name: Build
         run: npm run prepare
       - name: Release
@@ -37,3 +34,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
+        working-directory: ./packages/gatsby-theme-joy-ui
