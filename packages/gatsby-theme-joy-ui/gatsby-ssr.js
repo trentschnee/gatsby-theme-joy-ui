@@ -4,7 +4,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 exports.__esModule = true;
 exports.wrapRootElement = exports.onRenderBody = void 0;
 var _joy = require("@mui/joy");
-var _WrapRootElement = _interopRequireDefault(require("./WrapRootElement"));
+var _WrapRootElement = _interopRequireDefault(require("./dist/WrapRootElement"));
 // import { getInitColorSchemeScript } from '@mui/material/styles';
 
 var onRenderBody = function onRenderBody(_ref) {
