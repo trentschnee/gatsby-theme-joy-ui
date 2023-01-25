@@ -1,6 +1,9 @@
 {
-  "name": "gatsby-theme-joy-ui",
+  "name": "gatsby-theme-joy-ui-debugging",
   "version": "1.1.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A gatsby theme/plugin that uses Joy UI under the hood with customized components to work seamlessly with Gatsby!",
   "keywords": [
     "Joy"
@@ -8,10 +11,12 @@
   "author": "Trent S. <trentschnee@users.noreply.github.com>",
   "homepage": "https://github.com/trentschnee/gatsby-theme-joy-ui/tree/main/packages/gatsby-theme-joy-ui#readme",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
- 
+  "main": "index.js",
   "files": [
+    "gatsby-config.js",
+    "gatsby-node.js",
+    "gatsby-browser.js",
+    "gatsby-ssr.js",
     "./dist/**/*"
   ],
   "repository": {
@@ -20,12 +25,12 @@
     "directory": "packages/gatsby-theme-joy-ui"
   },
   "scripts": {
-    "prebuild": "rimraf \"dist\" && tsc --emitDeclarationOnly --declaration --declarationDir dist/",
+    "prebuild": "rimraf \"dist\"",
     "build": "babel src -d \"dist\" --extensions .ts,.tsx",
     "watch": "babel src -d \"dist\" --extensions .ts,.tsx --watch",
     "develop": "npm run watch",
     "start": "npm run watch",
-    "prepare": "cross-env NODE_ENV=production && npm run build",
+    "prepare": "cross-env NODE_ENV=production npm run build",
     "semantic-release": "semantic-release",
     "test": "jest"
   },

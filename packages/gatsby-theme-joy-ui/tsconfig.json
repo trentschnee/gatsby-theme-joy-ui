@@ -15,9 +15,8 @@
     "isolatedModules": true,
     "noImplicitAny": true,
     "outDir": "dist",
-    "baseUrl": "src",
     "jsx": "react"
   },
-  "include": ["src"],
+  "include": ["src", "index.ts"],
   "exclude": ["node_modules", "__tests__"]
 }

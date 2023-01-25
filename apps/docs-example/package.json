@@ -8,15 +8,15 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "echo \"Go to http://localhost:8000 when you see something around the lines of 'success Writing page-data.json'\" && gatsby develop",
-    "start": "npm run develop"
+    "develop": "gatsby develop",
+    "start": "gatsby develop"
   },
   "dependencies": {
-    "gatsby-theme-joy-ui": "*",
-    "@mui/joy": "^5.0.0-alpha.56",
-    "@emotion/react": "^11.0.0",
-    "@emotion/styled": "^11.0.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/joy": "^5.0.0-alpha.64",
     "gatsby": "^5.0.0",
+    "gatsby-theme-joy-ui-debugging": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
