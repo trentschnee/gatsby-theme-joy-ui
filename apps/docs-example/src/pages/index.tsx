@@ -4,7 +4,7 @@ import Sheet from "@mui/joy/Sheet";
 import { useColorScheme } from "@mui/joy/styles";
 // import TextField from "@mui/joy/TextField";
 import Typography from "@mui/joy/Typography";
-import { Stack } from "@mui/joy";
+import { FormControl, FormLabel, Input, Stack } from "@mui/joy";
 import * as React from "react";
 
 interface IIndexPageProps {}
@@ -51,30 +51,32 @@ const IndexPage: React.FunctionComponent<IIndexPageProps> = (props) => {
         }}
         variant="outlined"
       >
-        <Stack alignItems="center">
+        <div>
           <Typography level="h4" component="h1">
             <b>Welcome!</b>
           </Typography>
           <Typography level="body2">Sign in to continue.</Typography>
-        </Stack>
-        <Stack spacing={1}>
-          {/* <TextField
+        </div>
+        <FormControl>
+          <FormLabel>Email</FormLabel>
+          <Input
             // html input attribute
             name="email"
             type="email"
             placeholder="johndoe@email.com"
-            // pass down to FormLabel as children
-            label="Email"
           />
-          <TextField
+        </FormControl>
+        <FormControl>
+          <FormLabel>Password</FormLabel>
+          <Input
+            // html input attribute
             name="password"
             type="password"
             placeholder="password"
-            label="Password"
-          /> */}
-          <Button sx={{ mt: 1 /* margin top */ }}>Log in</Button>
-        </Stack>
+          />
+        </FormControl>
 
+        <Button sx={{ mt: 1 /* margin top */ }}>Log in</Button>
         <Typography
           endDecorator={<Link href="/sign-up">Sign up</Link>}
           fontSize="sm"
