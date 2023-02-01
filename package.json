@@ -6,7 +6,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "lerna run build",
+    "build": "yarn workspace docs-example build",
     "start": "yarn workspace docs-example start",
     "build:joytheme": "lerna run --scope \"gatsby-theme-joy-ui\" build",
     "start:joytheme": "lerna run --scope \"gatsby-theme-joy-ui\" start",
