@@ -9,7 +9,9 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

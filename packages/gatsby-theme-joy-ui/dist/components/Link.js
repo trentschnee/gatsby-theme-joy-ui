@@ -55,8 +55,7 @@ var Link = /*#__PURE__*/React.forwardRef(function Link(props, ref) {
   }
   var GLinkPropsSpread = {
     to: to,
-    replace: replace,
-    scroll: scroll
+    replace: replace
   };
   if (noLinkStyle) {
     return /*#__PURE__*/React.createElement(GatsbyLinkComposed, (0, _extends2.default)({

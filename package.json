@@ -8,6 +8,8 @@
   "scripts": {
     "build": "yarn workspace docs-example build",
     "start": "yarn workspace docs-example start",
+    "serve": "yarn workspace docs-example serve",
+    "clean": "yarn workspace docs-example clean",
     "build:joytheme": "lerna run --scope \"gatsby-theme-joy-ui\" build",
     "start:joytheme": "lerna run --scope \"gatsby-theme-joy-ui\" start",
     "watch:joytheme": "npm run start:joytheme",

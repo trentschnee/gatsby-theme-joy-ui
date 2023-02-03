@@ -7643,17 +7643,6 @@ gatsby-telemetry@^4.5.0:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-theme-joy-ui@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-joy-ui/-/gatsby-theme-joy-ui-1.2.0.tgz#dacb8d29f361641b65a4b590829da40d178420c0"
-  integrity sha512-6HE9wyA2wD/rkgLiBizTx8V2GZYuRXSWOG04uZP+GO0vSKezuYIhjDkDBpH83+4D5y8Gw2Y3x8Rpz818CsRMvg==
-  dependencies:
-    "@emotion/react" "^11.0.0"
-    "@emotion/styled" "^11.0.0"
-    "@mui/joy" "^5.0.0-alpha.56"
-    gatsby-plugin-emotion "^8.2.0"
-    gatsby-plugin-webfonts "^2.2.7"
-
 gatsby-worker@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-worker/-/gatsby-worker-2.5.0.tgz#cf4c31ba826284fb3d8bbad3a275ec52584fc24b"
