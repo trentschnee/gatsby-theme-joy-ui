@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/trentschnee/gatsby-theme-joy-ui/compare/v1.2.0...v1.2.1) (2023-02-03)
+
+
+### Bug Fixes
+
+* building static html fails for docs example  ([e9eeb5b](https://github.com/trentschnee/gatsby-theme-joy-ui/commit/e9eeb5bbd62aed65d40e4a2119a84ec1e2457acf))
+
 # [1.2.0](https://github.com/trentschnee/gatsby-theme-joy-ui/compare/v1.1.1...v1.2.0) (2023-01-25)
 
 
