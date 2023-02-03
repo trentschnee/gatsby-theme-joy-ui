@@ -47,7 +47,7 @@ const Link = React.forwardRef<HTMLAnchorElement, _LinkProps>(function Link(props
 
         return <JoyLink className={className} href={href} ref={ref} {...other} />;
     }
-    const GLinkPropsSpread = { to, replace, scroll };
+    const GLinkPropsSpread = { to, replace };
 
     if (noLinkStyle) {
         return <GatsbyLinkComposed className={className} ref={ref} {...GLinkPropsSpread} {...other} />;
